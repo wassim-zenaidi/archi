@@ -4,10 +4,10 @@
     <div class="contact-page">
       <div class="contact-info">
         <h1>Nous Contacter</h1>
-        <p>Nous sommes ravis de vous accueillir sur notre site de ventes de cafés !</p>
-        <p>Ce site a été créé dans le cadre d'un projet MSPR pour l'école EPSI.</p>
+        <p>Nous sommes ravis de vous accueillir sur notre site de ventes de fleurs !</p>
+        <p>Ce site a été créé dans le cadre d'un projet pour l'école EPSI.</p>
         <p>N'hésitez pas à nous contacter pour toute question, suggestion ou demande d'information :</p>
-        <p>Email : payetonkawa44@gmail.com</p>
+        <p>Email : flowers44@gmail.com</p>
       </div>
     </div>
   </div>

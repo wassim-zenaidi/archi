@@ -5,8 +5,8 @@
       <section class="welcome-section">
         <div class="banner-overlay">
           <div class="banner-text"> 
-            <h1>#PayeTonKawa ☕</h1>
-            <p>Découvrez notre sélection de cafés de qualité</p>
+            <h1>Flowers44 ☕</h1>
+            <p>Découvrez notre sélection de fleurs</p>
           </div>
         </div>
       </section>
@@ -32,7 +32,7 @@ export default {
   margin-top: 125px;
   width: 100%;
   height: 300px; /* Hauteur ajustée selon votre besoin */
-  background-color: #262525; /* Fond noir */
+  background-color: #ca5779; /* Fond noir */
   display: flex;
   justify-content: center; /* Centre le contenu horizontalement */
   align-items: center; /* Centre le contenu verticalement */

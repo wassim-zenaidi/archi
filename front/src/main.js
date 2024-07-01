@@ -14,8 +14,8 @@ axios.defaults.headers.common['Content-Type'] = 'application/json';
 try {
   app.use(
     createAuth0({
-      domain: "dev-qu8po7wzxi3qc6om.us.auth0.com",
-      clientId: "xWq2klm39umFkOUph3Itl1z7gtb9P88f",
+      domain: "dev-m10hf0i0ty21sbzq.eu.auth0.com",
+      clientId: "LS5BM7m63NM4KWROudIOTFVnOP619v8M",
       authorizationParams: {
         redirect_uri: window.location.origin
       }

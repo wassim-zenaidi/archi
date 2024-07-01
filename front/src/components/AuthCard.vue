@@ -28,7 +28,7 @@ export default {
     // Redirection automatique si l'utilisateur est admin
     watch(isSpecialUser, (isSpecial) => {
       if (isSpecial) {
-        router.push('/AdPage');
+        router.push('/ManageProducts');
       }
     });
 
