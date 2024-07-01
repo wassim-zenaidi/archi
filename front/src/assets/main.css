@@ -1,0 +1,112 @@
+
+/* Reset des marges et paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style pour l'en-tête (header) */
+header {
+  background-color: #cfa78e; /* Couleur du menu */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style pour le corps du site */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Police plus légère */
+  background-color: #f5f5f2; /* Blanc cassé */
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+/* Style pour la navigation */
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f3e5d9; /* Changement de couleur au survol */
+}
+
+/* Style pour les liens de connexion/inscription */
+.user-options a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+  margin-left: 10px; /* Éloignement entre les liens */
+}
+
+.user-options a:hover {
+  color: #f3e5d9; /* Changement de couleur au survol */
+}
+
+/* Style pour la section de bienvenue */
+.welcome-section {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.welcome-section h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #cfa78e;/* Marron noisette */
+}
+
+.welcome-section p {
+  font-size: 1.2rem;
+  color : #f8f8f8;
+}
+
+/* Style pour le footer */
+footer {
+  background-color: #262525; /* Marron noisette */
+  color: #ffffff;
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+}
+
+/* Animation au survol des liens */
+a {
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #b18366 /* Marron noisette */
+}
+
+
+
+/* Style pour le texte */
+.welcome-section p {
+  font-size: 1.2rem;
+  text-align: center; /* Centrage du texte */
+  margin-top: 10px; /* Marge au-dessus du texte */
+}
+
+
+
+
