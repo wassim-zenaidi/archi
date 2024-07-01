@@ -25,7 +25,7 @@
   <style scoped>
  
   header {
-    background-color: #ca5779;
+    background-color: #333;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -55,7 +55,7 @@
   }
   
   nav ul li a:hover {
-    color: #383737;
+    color: #d03f6a;
   }
   
   .user-options a {
@@ -67,7 +67,7 @@
   }
   
   .user-options a:hover {
-    color: #f3e5d9;
+    color: #d03f6a;
   }
   </style>
   

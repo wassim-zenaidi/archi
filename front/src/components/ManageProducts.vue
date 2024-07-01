@@ -187,7 +187,7 @@ textarea {
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  color: white;
+  color: rgb(50, 49, 49);
 }
 
 textarea {
@@ -195,7 +195,7 @@ textarea {
 }
 
 button[type="submit"] {
-  background-color: #6050dc;
+  background-color: #d03f6a;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -207,7 +207,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #b18366;
+  background-color: #d03f6a;
 }
 
 button:disabled {
@@ -245,7 +245,7 @@ th, td {
 }
 
 th {
-  background-color: #6050dc;
+  background-color: #d03f6a;
   color: white;
   text-align: center; /* Centrer le texte dans les cellules d'en-tête */
 }

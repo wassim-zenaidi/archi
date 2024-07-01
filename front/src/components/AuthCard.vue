@@ -70,7 +70,7 @@ export default {
 }
 
 .auth-button:hover {
-  background-color: #b18366;
+  background-color: #d03f6a;
   color: #fff; /* Changement de couleur au survol */
 }
 
@@ -81,7 +81,7 @@ export default {
 }
 
 .cart:hover {
-  background-color: #b18366;
+  background-color: #d03f6a;
   color: #fff; /* Changement de couleur au survol */
 }
 
@@ -101,7 +101,7 @@ export default {
 
 .login:hover,
 .logout:hover {
-  background-color: #b18366;
+  background-color: #d03f6a;
   color: #fff;
 }
 </style>

@@ -23,7 +23,7 @@
   <style scoped>
  
   header {
-    background-color: #ca5779;
+    background-color: #333;
     padding: 20px;
     display: flex;
     justify-content: space-between;

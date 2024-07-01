@@ -51,7 +51,7 @@ module.exports = (pool) => {
             // Ajouter l'image par défaut pour chaque produit si l'image n'est pas spécifiée
             const productsWithDefaultImage = result.recordset.map(product => ({
                 ...product,
-                image: product.image || 'src/img/cafe1.webp'  // Ajoute l'image par défaut si l'image n'est pas définie
+                image: product.image || 'src/img/fleurs.jpg'  // Ajoute l'image par défaut si l'image n'est pas définie
             }));
 
             // Log the retrieved data

@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 /* Style pour l'en-tête (header) */
@@ -19,8 +20,8 @@ header {
 /* Style pour le corps du site */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Police plus légère */
-  background-color: #f5f5f2; /* Blanc cassé */
-  color: #333;
+  background-color: #333; /* Blanc cassé */
+  color: #cbc5c5;
   font-size: 16px;
   line-height: 1.6;
 }
@@ -69,7 +70,7 @@ nav ul li a:hover {
 .welcome-section h1 {
   font-size: 3rem;
   margin-bottom: 20px;
-  color: #fafafa;/* Marron noisette */
+  color: #d03f6a;/* Marron noisette */
 }
 
 .welcome-section p {
@@ -79,7 +80,7 @@ nav ul li a:hover {
 
 /* Style pour le footer */
 footer {
-  background-color: #ca5779; /* Marron noisette */
+  background-color: #333; /* Marron noisette */
   color: #ffffff;
   text-align: center;
   padding: 5px;
@@ -95,7 +96,7 @@ a {
 }
 
 a:hover {
-  color: #b18366 /* Marron noisette */
+  color: #d03f6a /* Marron noisette */
 }
 
 
