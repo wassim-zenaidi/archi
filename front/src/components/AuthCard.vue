@@ -23,7 +23,7 @@ export default {
     const router = useRouter();
 
     // Vérifier si l'utilisateur est l'utilisateur spécifique
-    const isSpecialUser = computed(() => isAuthenticated.value && user.value && user.value.sub === 'google-oauth2|108805079080583966284');
+    const isSpecialUser = computed(() => isAuthenticated.value && user.value && user.value.sub === 'google-oauth2|101107839825650795856');
 
     // Redirection automatique si l'utilisateur est admin
     watch(isSpecialUser, (isSpecial) => {

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- Composant de la barre de navigation -->
     <AdNavbarCard></AdNavbarCard>
 
     <div class="manage-products-container">
@@ -58,8 +59,7 @@
                 <td>{{ product.price }}</td>
                 <td>{{ product.stock }}</td>
                 <td>{{ product.number }}</td>
-                <td>
-                  <button class="modify-button" @click="updateProduct(product.id)">Modifier</button>
+                <td class="actions-cell">
                   <button class="delete-button" @click="deleteProduct(product.id)">Supprimer</button>
                 </td>
               </tr>
@@ -70,7 +70,6 @@
     </div>
   </div>
 </template>
-
 <script>
 import productService from '../services/products';
 import AdNavbarCard from './AdNavbarCard.vue';
@@ -95,6 +94,7 @@ export default {
     await this.fetchProducts(); // Appel pour récupérer les produits lors du montage du composant
   },
   methods: {
+    // Méthode pour récupérer tous les produits
     async fetchProducts() {
       try {
         this.products = await productService.getAllProducts();
@@ -103,20 +103,19 @@ export default {
         alert('Erreur lors de la récupération des produits');
       }
     },
+    // Méthode pour créer un nouveau produit
     async createProduct() {
       try {
         await productService.addProduct(this.newProduct);
-        alert('Produit créé avec succès!');
+        alert('Produit créé avec succès! 🌼 ');
         await this.fetchProducts(); // Après création, rafraîchir la liste des produits
-        this.clearForm();
+        this.clearForm(); // Réinitialiser le formulaire
       } catch (error) {
         console.error('Erreur lors de la création du produit:', error);
         alert('Erreur lors de la création du produit');
       }
     },
-    async updateProduct(productId) {
-      // Logique pour la mise à jour d'un produit
-    },
+    // Méthode pour supprimer un produit par ID
     async deleteProduct(productId) {
       try {
         await productService.deleteProduct(productId);
@@ -127,6 +126,7 @@ export default {
         alert('Erreur lors de la suppression du produit');
       }
     },
+    // Méthode pour réinitialiser le formulaire de création de produit
     clearForm() {
       this.newProduct = {
         name: '',
@@ -139,8 +139,6 @@ export default {
   }
 };
 </script>
-
-
 <style scoped>
 .manage-products-container {
   padding: 20px;
@@ -248,6 +246,13 @@ th {
   background-color: #d03f6a;
   color: white;
   text-align: center; /* Centrer le texte dans les cellules d'en-tête */
+}
+
+/* Centrer le contenu des cellules d'actions */
+.actions-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .modify-button,

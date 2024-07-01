@@ -3,7 +3,7 @@ const sql = require('mssql');
 const router = express.Router();
 
 module.exports = (pool) => {
-    // Route pour insérer des données dans la table "products"
+    // Route pour insérer des données dans la table "fleur"
     router.post('/', async (req, res) => {
         const { price, stock, id, description, name, number } = req.body;
         
@@ -24,7 +24,7 @@ module.exports = (pool) => {
                 .input('description', sql.NVarChar, description)
                 .input('name', sql.NVarChar, name)
                 .input('number', sql.NVarChar, number)
-                .query('INSERT INTO products (price, stock, description, name, number) VALUES (@price, @stock, @description, @name, @number)');
+                .query('INSERT INTO fleur (price, stock, description, name, number) VALUES (@price, @stock, @description, @name, @number)');
             
             // Log success message
             console.log('Produit ajouté avec succès:', { price, stock, description, name, number });
@@ -40,7 +40,7 @@ module.exports = (pool) => {
     router.get('/', async (req, res) => {
         try {
             const request = pool.request();
-            const result = await request.query('SELECT * FROM products');
+            const result = await request.query('SELECT * FROM fleur');
             
             // Vérifier si des produits ont été récupérés
             if (result.recordset.length === 0) {
@@ -80,7 +80,7 @@ module.exports = (pool) => {
             await request
                 .input('id', sql.Int, productId)
                 .input('stock', sql.Int, stock)
-                .query('UPDATE products SET stock = @stock WHERE id = @id');
+                .query('UPDATE fleur SET stock = @stock WHERE id = @id');
             
             // Vérifier si une ligne a été affectée pour confirmer la mise à jour
             if (request.rowsAffected[0] === 0) {
@@ -106,7 +106,7 @@ module.exports = (pool) => {
             const request = pool.request();
             await request
                 .input('id', sql.Int, productId)
-                .query('DELETE FROM products WHERE id = @id');
+                .query('DELETE FROM fleur WHERE id = @id');
             
             // Vérifier si une ligne a été affectée pour confirmer la suppression
             if (request.rowsAffected[0] === 0) {

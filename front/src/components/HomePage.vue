@@ -5,7 +5,7 @@
       <section class="welcome-section">
         <div class="banner-overlay">
           <div class="banner-text"> 
-            <h1>Hello</h1>
+            <h1>Hello🌷</h1>
             <p>Découvrez notre sélection de fleurs</p>
           </div>
         </div>
